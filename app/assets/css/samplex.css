@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*!
+* Platform Name: SampleX Di
+* Author: Nedaouka Joachim
+* Version: 1.0.0
+* Updated: 05.14.2023
+**/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url("../fonts/SamsungOne-400.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SamsungOneB";
+    src: url("../fonts/SamsungOne-700.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "ARLRDBD";
+    src: url("../font/ARLRDBD.ttf");
+    font-weight: bold;
+    font-style: normal;
+  } */
+
+@font-face {
+    font-family: "BRLNSB";
+    src: url("../fonts/BRLNSB.TTF");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BRLNSR";
+    src: url("../fonts/BRLNSR.TTF");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GOTHIC";
+    src: url("../fonts/GOTHIC.TTF");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GOTHICB";
+    src: url("../fonts/GOTHICB.TTF");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "ARLRDBD", "BRLNSR", "BRLNSB", "GOTHIC", "GOTHICB";
+
+}
+
+.sx-image {
+    background: url(../images/hero.png);
+    /* background: url(../images/hero.png); */
+    height: 100em;
+    width: auto;
+    padding-top: 50px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Flip / Mirror Image */
+.flip-horizontal {
+    transform: rotateY(180deg);
+  }
+  
+
+/* Custom Scollbar */
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+        height: 20px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #94a3b8;
+        border-radius: 100vh;
+        border: 3px solid #fff;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+    }
+}
+
+/* Custom form's input for floating labels */
+input:focus-within~label {
+    @apply transform scale-75 -translate-y-6 text-blue-500;
+}
+
+input:focus-within~label,
+input:not(:placeholder-shown)~label {
+    @apply transform scale-75 -translate-y-6;
+}
+
+input:focus-within~label {
+    @apply text-blue-500;
+}
+
+/* Custom bounce animation with a specific boucing distance */
+@layer utilities {
+    @variants responsive {
+        .animate-bounce-50 {
+            animation: bounce-50 4s infinite;
+        }
+
+        .-animate-bounce-50 {
+            animation: -bounce-50 4s infinite;
+        }
+    }
+}
+
+@keyframes -bounce-50 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-75%);
+    }
+}
+
+@keyframes bounce-50 {
+
+    0%,
+    100% {
+        transform: translateY(-75%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+}

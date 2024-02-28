@@ -1,0 +1,43 @@
+{
+  "name": "samplex.org",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.11.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "i18next": "^22.5.0",
+    "i18next-browser-languagedetector": "^7.0.2",
+    "i18next-http-backend": "^2.2.1",
+    "next": "14.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-i18next": "^12.3.1",
+    "react-iconly": "^2.2.10",
+    "react-icons": "^4.10.1",
+    "react-phone-number-input": "^3.3.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^5.0.1",
+    "sequelize": "^6.32.1",
+    "sharp": "^0.32.6",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss": "^3"
+  },
+  "proxy": "https://api.dailylearn.org"
+}
