@@ -65,7 +65,7 @@ body {
 }
 
 .sx-image {
-    background: url(../images/hero.png);
+    /* background: url(../images/hero.png); */
     /* background: url(../images/hero.png); */
     height: 100em;
     width: auto;

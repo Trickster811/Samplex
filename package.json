@@ -1,5 +1,5 @@
 {
-  "name": "samplex.org",
+  "name": "samplex",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,35 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-oauth/google": "^0.11.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.4.0",
+    "@react-oauth/google": "^0.12.1",
+    "alpinejs": "^3.13.5",
+    "axios": "^1.6.7",
     "bcryptjs": "^2.4.3",
-    "i18next": "^22.5.0",
-    "i18next-browser-languagedetector": "^7.0.2",
-    "i18next-http-backend": "^2.2.1",
-    "next": "14.0.1",
+    "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-i18next": "^12.3.1",
-    "react-iconly": "^2.2.10",
-    "react-icons": "^4.10.1",
-    "react-phone-number-input": "^3.3.0",
-    "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^5.0.1",
-    "sequelize": "^6.32.1",
-    "sharp": "^0.32.6",
-    "web-vitals": "^2.1.4"
+    "react-feather": "^2.0.10",
+    "react-phone-number-input": "^3.3.9",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10",
+    "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4",
+    "eslint-config-next": "14.1.1",
     "postcss": "^8",
-    "tailwind-scrollbar": "^3.0.4",
-    "tailwindcss": "^3"
-  },
-  "proxy": "https://api.dailylearn.org"
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.3.0"
+  }
 }
