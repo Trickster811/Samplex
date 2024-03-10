@@ -5,7 +5,7 @@ import Link from "next/link";
 import samplex_logo_light from "../assets/images/samplex_logo_light.png";
 import x from "../assets/icons/x.svg";
 // assets imports : icons
-import { Facebook, GitHub, Linkedin } from "react-feather";
+import { Facebook, GitHub, Linkedin, Twitter } from "react-feather";
 // assets imports : css
 import "../assets/css/samplex.css";
 
@@ -28,36 +28,37 @@ function SamplexFooter() {
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more or less normal.
             </p>
-            <div className="flex gap-x-8 lg:mt-8">
+            <div className="flex gap-x-4 lg:mt-8">
               <Link
                 href={"#"}
-                className="p-2 border rounded-md border-blue-500 hover:bg-blue-500"
+                className="p-2 border rounded-md border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white text-sm"
               >
-                <Facebook className="text-blue-500 hover:text-white" />
+                <Facebook size={20} />
               </Link>
               <Link
                 href={"#"}
-                className="p-2 border rounded-md border-blue-500 hover:bg-blue-500"
+                className="p-2 border rounded-md border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white text-sm"
               >
-                <Linkedin className="text-blue-500 hover:text-white" />
+                <Linkedin size={20} />
               </Link>
               <Link
                 href={"#"}
-                className="p-2 border rounded-md border-black hover:bg-black"
+                className="p-2 border rounded-md border-black hover:bg-black text-black hover:text-white text-sm"
               >
-                <Image
+                {/* <Image
                   priority
                   src={x}
                   alt="twitter logo"
                   // width={100}
-                  className="text-black hover:text-white"
-                ></Image>
+                  className=""
+                ></Image> */}
+                <Twitter size={20} />
               </Link>
               <Link
                 href={"#"}
-                className="p-2 border rounded-md border-gray-500 hover:bg-gray-500"
+                className="p-2 border rounded-md border-gray-500 hover:bg-gray-500 text-gray-500 hover:text-white text-sm"
               >
-                <GitHub className="text-gray-500 hover:text-white" />
+                <GitHub size={20} />
               </Link>
             </div>
           </div>

@@ -132,7 +132,7 @@ function SamplexRegisterForServicePage(props) {
         <Link
           href={"#"}
           className="group flex justify-center items-center gap-x-2 w-2/3 py-2 rounded-md bg-[#1288DC] text-white font-[SamsungOneB]"
-        >
+        > 
           <p>Send</p>
           <Send className="transition duration-700 ease-in-out group-hover:translate-x-4" />
         </Link>

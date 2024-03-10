@@ -9,7 +9,11 @@ import {
 } from "../components/index.component";
 // assets imports : images
 import samplex_logo_light from "../assets/images/samplex_logo_light.png";
-import x from "../assets/icons/x.svg";
+import hero_image from "../assets/images/Hero-image.png";
+import service_mobile from "../assets/images/service_mobile.png";
+import service_ux_design from "../assets/images/service_ux_design.png";
+import service_branding from "../assets/images/service_branding.png";
+import service_website from "../assets/images/service_website.png";
 import partners from "../assets/images/partners.png";
 import julie_queen from "../assets/images/girl_studying_with_music.png";
 // assets imports : icons
@@ -43,7 +47,6 @@ function SamplexStartPage() {
                 <div className="px-4 py-2 text-6xl text-white">Business</div>
               </div>
             </div>
-
             <p className="text-balance">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
@@ -58,9 +61,19 @@ function SamplexStartPage() {
               <div className="-z-10 absolute -left-0.5 -bottom-0.5 w-2/5 h-8 rounded-bl-lg bg-black"></div>
             </Link>
           </div>
+          <div>
+            <Image
+              src={hero_image}
+              alt="hero image"
+              // width={100}
+              blurDataURL="data:..."
+              placeholder="blur" // Optional blur-up while loading
+              className="absolute -top-40 -right-14 w-2/3"
+            ></Image>
+          </div>
         </div>
         {/* `What we do` Zone */}
-        <div className="w-full mb-20">
+        <div className="w-full mt-40 mb-20">
           {/* `What we do` Zone [ 1st Line ] */}
           <p className="text-[#FFB92D]">What we do</p>
           <div className="grid grid-cols-2 justify-between mb-20">
@@ -79,8 +92,15 @@ function SamplexStartPage() {
             <div className="col-span-2 flex flex-col gap-6">
               {/* `What we do` Zone [ 2nd Line ] [ 1st Column ] [ 1st Line ] */}
               <div className="grid grid-cols-3 content-end w-full h-1/2 rounded-lg bg-[#1288DC]">
-                <div className="col-auto flex justify-center items-center w-full h-full">
-                  Image here
+                <div className="relative col-auto flex justify-center items-center w-full h-full">
+                  <Image
+                    src={service_mobile}
+                    alt="mobile Development Service"
+                    // width={100}
+                    blurDataURL="data:..."
+                    placeholder="blur"
+                    className="absolute object-cover h-full"
+                  ></Image>
                 </div>
                 <div className="col-span-2 flex flex-col justify-end gap-y-4 p-6">
                   <p className="text-4xl text-white text-balance font-[SamsungOneB]">
@@ -101,8 +121,9 @@ function SamplexStartPage() {
               </div>
               {/* `What we do` Zone [ 2nd Line ] [ 1st Column ] [ 2nd Line ] */}
               <div className="flex gap-6 w-full h-1/2">
+                {/* `What we do` Zone [ 2nd Line ] [ 1st Column ] [ 2nd Line ] [1st Column] */}
                 <div className="flex flex-col w-1/2 rounded-lg bg-zinc-800">
-                  <div className="col-span-2 flex flex-col justify-between p-4">
+                  <div className="col-span-2 flex flex-col justify-between px-4 pt-4">
                     <div className="grid grid-cols-2 content-start">
                       <p className="text-4xl text-white font-[SamsungOneB]">
                         UX Design
@@ -114,8 +135,15 @@ function SamplexStartPage() {
                     </div>
                   </div>
                   <div className="col-auto flex justify-between items-end w-full h-full">
-                    <div className="flex justify-center items-center w-3/5 h-full">
-                      Image here
+                    <div className="w-3/5 h-full">
+                      <Image
+                        src={service_ux_design}
+                        alt="UX Design Service"
+                        // width={100}
+                        blurDataURL="data:..."
+                        placeholder="blur" // Optional blur-up while loading
+                        className="object-contain rounded-bl-lg"
+                      ></Image>
                     </div>
                     <Link
                       href={"#"}
@@ -125,11 +153,16 @@ function SamplexStartPage() {
                     </Link>
                   </div>
                 </div>
+                {/* `What we do` Zone [ 2nd Line ] [ 1st Column ] [ 2nd Line ] [2nd Column] */}
                 <div className="flex w-1/2 rounded-lg bg-[#DBDBDB]">
-                  <div className="col-auto flex justify-center items-center w-full h-full">
-                    Image here
-                  </div>
-                  <div className="col-span-2 flex flex-col justify-between p-4">
+                  <Image
+                    src={service_branding}
+                    alt="Branding Service"
+                    blurDataURL="data:..."
+                    placeholder="blur" // Optional blur-up while loading
+                    className="object-cover w-3/5 h-full -mr-14"
+                  ></Image>
+                  <div className="flex flex-col justify-between py-4 pr-4">
                     <div>
                       <p className="text-4xl text-white text-balance font-[SamsungOneB]">
                         Branding
@@ -151,21 +184,32 @@ function SamplexStartPage() {
               </div>
             </div>
             {/* `What we do` Zone [ 2nd Line ] [ 2nd Column ] */}
-            <div className="col-auto flex flex-col gap-y-4 h-[70vh] px-8 pt-14 rounded-lg bg-[#FFB92D]">
-              <p className="text-4xl text-white text-balance font-[SamsungOneB]">
-                Web and Desktop development
-              </p>
-              <p className="text-white">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour
-              </p>
-              <Link
-                href={"#"}
-                className="flex justify-end text-md text-white hover:underline font-[SamsungOneB]"
-              >
-                More about -&gt;
-              </Link>
+            <div className="col-auto flex flex-col gap-y-4 h-[70vh] rounded-lg bg-[#FFB92D]">
+              <div className="px-8 pt-14">
+                <p className="text-4xl text-white text-balance font-[SamsungOneB]">
+                  Web and Desktop development
+                </p>
+                <p className="text-white">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour
+                </p>
+                <Link
+                  href={"#"}
+                  className="flex justify-end text-md text-white hover:underline font-[SamsungOneB]"
+                >
+                  More about -&gt;
+                </Link>
+              </div>
+
+              <Image
+                src={service_website}
+                alt="Web and Desktop Development"
+                // width={100}
+                blurDataURL="data:..."
+                placeholder="blur" // Optional blur-up while loading
+                className="h-full -mt-10"
+              ></Image>
             </div>
           </div>
         </div>
@@ -354,160 +398,7 @@ function SamplexStartPage() {
         </div>
       </div>
       {/* Samplex Home Page Footer */}
-      {/* <SamplexFooter /> */}
-      <div className="w-full px-14 py-8 bg-[#FFB92D]">
-        {/* Footer First line */}
-        <div className="lg:grid lg:grid-cols-5 lg:place-content-center lg:content-center md:justify-around md:items-center lg:gap-x-8 w-full">
-          {/* Footer First Line [ 1st Part ] */}
-          <div className="flex flex-col gap-y-4">
-            <Image
-              src={samplex_logo_light}
-              alt="Samplex logo"
-              width={100}
-              blurDataURL="data:..."
-              placeholder="blur" // Optional blur-up while loading
-            ></Image>
-            <p className="text-balance">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more or less normal.
-            </p>
-            <div className="flex gap-x-4 lg:mt-8">
-              <Link
-                href={"#"}
-                className="p-2 border rounded-md border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white text-sm"
-              >
-                <Facebook size={20} />
-              </Link>
-              <Link
-                href={"#"}
-                className="p-2 border rounded-md border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white text-sm"
-              >
-                <Linkedin size={20} />
-              </Link>
-              <Link
-                href={"#"}
-                className="p-2 border rounded-md border-black hover:bg-black text-black hover:text-white text-sm"
-              >
-                {/* <Image
-                  priority
-                  src={x}
-                  alt="twitter logo"
-                  // width={100}
-                  className=""
-                ></Image> */}
-                <Twitter size={20} />
-              </Link>
-              <Link
-                href={"#"}
-                className="p-2 border rounded-md border-gray-500 hover:bg-gray-500 text-gray-500 hover:text-white text-sm"
-              >
-                <GitHub size={20} />
-              </Link>
-            </div>
-          </div>
-          {/* Footer First Line [ 2nd Part ] */}
-          <div className="flex flex-col gap-y-4 h-full">
-            <p className="text-xl font-[SamsungOneB]">Services</p>
-            <div className="flex flex-col gap-y-2">
-              <Link href={"#"} className="hover:underline">
-                Mobile Development
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Web Development
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Desktop Development
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                UI/UX Design
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Branding
-              </Link>
-            </div>
-          </div>
-          {/* Footer First Line [ 3rd Part ] */}
-          <div className="flex flex-col gap-y-4 h-full">
-            <p className="text-xl font-[SamsungOneB]">Company</p>
-            <div className="flex flex-col gap-y-2">
-              <Link href={"#"} className="hover:underline">
-                Team
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Customers
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Blog
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Team of Service
-              </Link>
-              <Link href={"/"} className="hover:underline">
-                Terms of Use
-              </Link>
-              <Link href={"/"} className="hover:underline">
-                Privacy Policy
-              </Link>
-            </div>
-          </div>
-          {/* Footer First Line [ 4th Part ] */}
-          <div className="flex flex-col gap-y-4 h-full">
-            <p className="text-xl font-[SamsungOneB]">Support</p>
-            <div className="flex flex-col gap-y-2">
-              <Link href={"#"} className="hover:underline">
-                Stack Community
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Support Documents
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Helpdesk API Documents
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Services Status
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Email Contact
-              </Link>
-            </div>
-          </div>
-          {/* Footer First Line [ 5th Part ] */}
-          <div className="flex flex-col gap-y-4 h-full">
-            <p className="text-xl font-[SamsungOneB]">Contacts Us</p>
-            <div className="flex flex-col gap-y-2">
-              <Link
-                href={"https://Samplex.digital@gmail.com"}
-                className="hover:underline"
-              >
-                Samplex.digital@gmail.com
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                +237 000 000 000
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                North - Garoua
-              </Link>
-              <Link href={"#"} className="hover:underline">
-                Cameroon
-              </Link>
-            </div>
-          </div>
-        </div>
-        {/* Footer Second Line */}
-        <div className="flex justify-between items-center pt-8">
-          <p>Copyright © {new Date().getFullYear()}</p>
-          <p>Samplex . All right reserved</p>
-          <p className="flex gap-x-4">
-            <Link href={"/"} className="underline">
-              Terms of Use
-            </Link>
-            <Link href={"/"} className="underline">
-              Privacy Policy
-            </Link>
-          </p>
-        </div>
-      </div>
+      <SamplexFooter />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { ServiceCardBuilder } from "../components/new-quote.component";
 // assets imports : images
 import samplex_logo_colored from "../assets/images/samplex_logo_colored.png";
-import service_mobile from "../assets/images/service - mobile.png";
-import ui_ux_design from "../assets/images/Service-UxDesign.png";
+import service_mobile from "../assets/images/service_mobile.png";
+import ui_ux_design from "../assets/images/service_ux_design.png";
 // assets imports : icons
 import { ArrowLeft } from "react-feather";
 // assets imports : css
