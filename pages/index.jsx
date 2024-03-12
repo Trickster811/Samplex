@@ -68,7 +68,7 @@ function SamplexStartPage() {
               // width={100}
               blurDataURL="data:..."
               placeholder="blur" // Optional blur-up while loading
-              className="absolute -top-40 -right-14 w-2/3"
+              className="absolute -top-14 -right-14 w-3/5"
             ></Image>
           </div>
         </div>
